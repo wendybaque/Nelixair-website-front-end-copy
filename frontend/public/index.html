@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo_small.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Nelixair is the first next generation virtual airline with new features never implemented before.
+    "
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- IMPORT FONTS : Poppins, Nunito & Antonio  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- END IMPORT FONTS -->
+
+    <!-- GOOGLE TAG MANAGER -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-{YOUR _DATA}");
+    </script>
+    <!-- END GOOGLE TAG MANAGER -->
+
+    <title>Nelixair Association</title>
+
+    <!-- SHEMA  For more details, see the following website : https://schema.org/
+-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Airlines",
+        "name": "Nelixair Association",
+        "image": ["./logo_small.svg"],
+        "author": {
+          "@type": "Organization",
+          "name": "Nelixair"
+        }
+      }
+    </script>
+    <!-- END SHEMA  -->
+
+    <!-- OPEN GRAPH For more details, see the following website : https://ogp.me/ -->
+    <meta
+      property="og:title"
+      content="Site internet de Wendy Baqué, auteure de romans"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://association.nelixair.com/" />
+    <meta property="og:image" content="https://nelixair.com/img/fulllogo.png" />
+    <meta
+      property="og:description"
+      content="Nelixair is the first next generation virtual airline with new features never implemented before.
+    "
+    />
+    <!-- END OPEN GRAPH -->
+  </head>
+  <body>
+    <!-- GOOGLE TAG MANAGER (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-{YOUR_DATA}"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- END GOOGLE TAG MANAGER (noscript) -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/app.jsx"></script>
+  </body>
+</html>

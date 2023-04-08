@@ -1,0 +1,59 @@
+/* Based on this package : https://www.npmjs.com/package/react-responsive-carousel */
+.carousel {
+  position: relative;
+  background-color: #E2E2E2;
+}
+
+/* Overlay */
+.carousel .overlay {
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50);
+  left: 10%;
+  padding: 0.4rem 1.5rem;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px -2px #242424;
+  box-shadow: 5px 5px 15px -2px #242424;
+}
+
+/* Title */
+.carousel .overlay-title {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0.8rem 0 1rem 0;
+}
+
+/* Text */
+.carousel .overlay-text {
+  text-align: center;
+  color: white;
+  margin: 0.6rem 0 0.7rem 0;
+}
+/* Thumbnails */
+.carousel .thumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.carousel .thumb {
+  cursor: pointer;
+  margin: 0 5px;
+  -webkit-box-shadow: 5px 5px 15px -6px #242424;
+  box-shadow: 5px 5px 15px -6px #242424;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel .slide .img {
+    width: 100vw !important;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
